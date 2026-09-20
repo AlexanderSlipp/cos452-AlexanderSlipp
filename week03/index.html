@@ -62,9 +62,6 @@
        -0.5, 0.5,   // top-left
     ]);
 
-    // clipping causes it to render like a quadralateral
-    // because the point is off screen and thus cut off.
-
     const buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
